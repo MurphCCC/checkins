@@ -1,0 +1,76 @@
+/* Disable the box that takes us to the details tab */
+a.checkin-person-content.t-bg-20.shortcut--details {
+    pointer-events: none;
+}
+
+a.checkin-person-status.t-bg-20.pending.shortcut--selectable-clickable, a.checkin-person-status.t-bg-20.already.shortcut--selectable-clickable {
+    width: 100%;
+}
+
+
+/* Rewrite the submit button using css */
+[data-reactid=".3.1.1.0.2"] {
+    display: none;
+}
+[data-reactid=".3.1.1.0.1"] {
+    display: none;
+}
+inspector-stylesheet:6
+[data-reactid=".3.1.1.0"]::after {
+    /* display: none !important; */
+    background: green !important;
+    /* color: green !important; */
+    content: "Proceed to Check in";
+}
+
+
+[data-reactid=".3.1.1.0"]{
+    /* display: none !important; */
+    background: green !important;
+    /* color: green !important; */
+    content: "Proceed to Check in";
+}
+
+
+.btn.btn--submit {
+  background: #74c068 !important;
+  border-color: white !important;
+  width: 400px;
+  height: 115px;
+  color: white;
+  font-size: 29px;
+  margin-left: 400px!important;
+  text-indent: -9999px;
+  line-height:0;
+}
+
+
+
+.btn.btn--submit::after {
+    font-size: 40px !important;
+    content: "Proceed to Check In";
+    text-indent: 0;
+    display: block;
+    margin-top: -30px;
+}
+
+.key-search .fake-input.empty:before {
+    content:  "Enter the last 4 digits of your "
+}
+
+
+/*Search button before a number has been inputted*/
+[data-reactid=".3.0.0.0.1.0"] {
+    display: none !important;
+}
+
+/*Search button after a number has been inputted*/
+input.btn.btn--expand--touch[value="Search!"] {
+    display: inline !important;
+    background: #0bcc0b;
+}
+
+/*Hide checked in by box on check in screen*/
+.station-custom-select.station-custom-select--check-in-by {
+    display: none;
+}
